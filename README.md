@@ -1,4 +1,4 @@
-# mose-code-decoder
+# Create-Enumerable-Ruby
 
 <!-- TABLE OF CONTENTS -->
 
@@ -24,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Morse Code <a name="about-project"></a>
+# 📖  Enumerable Ruby <a name="about-project"></a>
 
-This is a program that takes morse code as an input and decodes it.
+This is a program that explore the ruby enumerable object and its method.
 
 ## 🛠 Built With <a name="built-with"></a>
 
