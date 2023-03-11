@@ -1,19 +1,20 @@
 module MyEnumerable
-  def all?(&block)
-    result = true
-    each { |item| result = false unless block.call(item) }
-    result
+  def all?
+    arr = []
+    @list.each { |i| arr.push(i) if yield i }
+    puts arr.length == @list.length
   end
 
-  def any?(&block)
-    result = false
-    each { |item| result = true if block.call(item) }
-    result
+  def any?
+    @list.each do |i|
+      puts true if yield i
+    end
+    puts false
   end
 
-  def filter(&block)
-    result = []
-    each { |item| result << item if block.call(item) }
-    result
+  def filter
+    @arr = []
+    @list.each { |i| @arr.push(i) if yield i }
+    print "#{@arr} \n"
   end
 end
